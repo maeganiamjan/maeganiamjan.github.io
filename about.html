@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: courier;
+  font-size: 14px;
+  background-color: rgb(255, 241, 118);
+}
+
+.header {
+  background-color:rgb(161, 183, 255);
+  padding: 120px;
+  text-align: center;
+  background-image: url("LOSANGELESZOO_LOGO.png");
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: rgb(86, 126, 255);
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 40px;
+}
+
+#navbar a:hover {
+  color:rgb(86, 126, 255);
+  text-decoration: rgb(255, 241, 118) line-through;
+}
+
+#navbar a.active {
+  border: 4px solid rgb(255, 241, 118) ;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.entrance {
+  margin-left: 300px;
+  margin-bottom: 100px;
+}
+
+.article1 {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.article2 {
+  margin-top: 50px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.article3 {
+  margin-top: 50px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.article4 {
+  margin-top: 100px;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-bottom: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color:white;
+  border-radius: 30px;
+  border: 8px solid rgb(86, 126, 255);
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+</div>
+
+<div id="navbar">
+  <a href="lazoo.html">Home</a>
+  <a class="active" href="about.html">About</a>
+  <a href="animal+plants.html">Animal + Plants</a>
+  <a href="events.html">Events</a>
+  <a href="donate.html">Donate</a>
+  <a href="volunteer.html">Volunteer</a>
+  <a href="contact.html">Contact</a>
+</div>
+  <div class="title">
+  <h1>ABOUT THE LOS ANGELES ZOO</h1></div>
+  <div class="entrance">
+    <img src = "frontentrance.jpg" alt = "entrance">
+    </div>
+    <div class = "article1">
+  <h2>Nurturing Wildlife and Enriching the Human Experience</h2>
+  <h3>Mission Statement</h3>
+  <p>To serve the community, the Los Angeles Zoo will create an environment for recreation and discovery; inspire an appreciation of wildlife through exhibitry and education; ensure the highest level of animal welfare; and support programs that preserve biodiversity and conserve natural habitat.</p>
+</div>
+<div class = "article2">
+<h3>Vision Statement</h3>
+<p>We will leverage the diverse resources of Los Angeles to be an innovator for the global zoo community, creating dynamic experiences to connect people and animals.</p>
+</div>
+<div class = "article3">
+  <h3>Overview</h3>
+  <p>The City of Los Angeles owns the Zoo, its land and facilities, and the animals. Animal care, grounds maintenance, construction, education, public information, and administrative staff are City employees. The Mayor of the City of Los Angeles is Eric Garcetti who began his first term in 2013. Located within the 4th City Council District, the Zoo is represented by Councilman David Ryu. Denise M. Verret was appointed by Mayor Eric Garcetti as Chief Executive Officer & Zoo Director in July 2019.</p>
+<p>The Greater Los Angeles Zoo Association (GLAZA) was created in 1963 as a private, nonprofit, fundraising organization to support the new Zoo. Today, GLAZA provides support through fundraising, membership, organizing special events and travel programs, producing award-winning publications, coordinating one of the largest zoo volunteer programs in the country, administering the contract for visitor services concessions within the Zoo, and supporting community relations, and public relations. GLAZA President Tom Jacobson was appointed by the Board of Trustees in July 2019.</p>
+</div>
+<div class = "article4">
+  <h3>Fact Sheet</h3>
+  <p>The Los Angeles Zoo and Botanical Gardens opened on November 28, 1966. The Zoo is home to more than 1,400 mammals, birds, amphibians, and reptiles representing more than 270 different species, of which more than 58 are endangered. In addition, the Zoo’s botanical collection comprises several planted gardens and over 800 different plant species with approximately 7,000 individual plants. The Zoo receives nearly 1.8 million visitors per year and is owned and operated by the City of Los Angeles. The daily management of the Zoo is overseen by Chief Executive Officer & Zoo Director Denise M. Verret. The Zoo is accredited by the Association of Zoos and Aquariums (AZA).</p>
+<p>Size: 133 acres</p>
+<p>Location: 5333 Zoo Drive, Los Angeles, CA. 90027 – Griffith Park at the intersection of the Golden State (5) and Ventura (134) freeways.</p>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

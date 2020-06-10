@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="W3SCHOOLS.css">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: courier;
+  font-size: 14px;
+  background-color: rgb(255, 186, 121);
+}
+
+.header {
+  background-color:rgb(139, 238, 213);
+  padding: 120px;
+  text-align: center;
+  background-image: url("LOSANGELESZOO_LOGO.png");
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color:rgb(92, 228, 194);
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 50px;
+}
+
+#navbar a:hover {
+    color:rgb(92, 228, 194);
+    text-decoration: rgb(255, 241, 118) line-through;
+}
+
+#navbar a.active {
+border: 4px solid rgb(255, 241, 118) ;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 30px;
+  color:red;
+}
+
+.entrance {
+  margin-left: 300px;
+  margin-bottom: 100px;
+}
+
+.mySlides {
+    display:none;
+    }
+
+.donatebox {
+  margin-left: 600px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.animaltext {
+  margin-left: 500px;
+  margin-right: 500px;
+  margin-bottom: 50px;
+}
+
+input[type=text] {
+  width: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 4px solid rgb(77, 209, 176);
+  border-radius: 4px;
+}
+
+.form1 {
+  margin-left: 500px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type=text2] {
+  width: 50.8%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 4px solid rgb(77, 209, 176);
+  border-radius: 4px;
+}
+
+.form2 {
+  margin-left: 500px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type=text3] {
+  width: 46.5%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 4px solid rgb(77, 209, 176);
+  border-radius: 4px;
+}
+
+.form3 {
+  margin-left: 500px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 5px solid black;
+    padding: 10px 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 750px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    transition-duration: 0.4s;
+    border-radius: 90px;
+    font-family: courier;
+  }
+
+  .button1:hover {
+    background-color: black;
+    color: white;
+  }
+  
+
+
+</style>
+<body>
+
+<div class="header">
+</div>
+
+<div id="navbar">
+  <a href="lazoo.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="animal+plants.html">Animal + Plants</a>
+  <a href="events.html">Events</a>
+  <a class="active" href="donate.html">Donate</a>
+  <a href="volunteer.html">Volunteer</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+  <div class="title">
+  ANIMALS NEED YOUR HELP</div>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="deers.jpg" style="width:100%">
+  <img class="mySlides" src="elephantdumb.png" style="width:100%">
+  <img class="mySlides" src="sharktank.jpg" style="width:100%">
+  <img class="mySlides" src="zootrain.png" style="width:100%">
+
+  <button class="w3-button w3-white w3-display-left" onclick="plusDivs(-1)">&#10094;
+</button>
+  <button class="w3-button w3-white w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<div class="box1">
+  <div class="donatebox">
+    <img src="donatebox.png" alt="donate" width= 50%>
+  </div>
+</div>
+
+<div class="animaltext">
+  <h3>YOU CAN HELP BY DONATING</h3>
+  <P>Making a general contribution has a direct impact on the more than 1,400 animals that call the L.A. Zoo home. By providing immediate and vital resources for ongoing operations and programs, you ensure funds can be spent where and when they are needed most.</P>
+</div>
+
+<div class="form1">
+<form>
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="fname">
+</form></div>
+
+<div class="form2">
+  <label for="lname">Last Name</label>
+  <input type="text2" id="lname" name="lname">
+</form></div>
+
+<div class="form3">
+  <label for="lname">Donation Amount</label>
+  <input type="text3" id="lname" name="lname">
+</form></div>
+
+<div class = "donationbutton"> <!--Closet 2-->
+          <button class="button1">I SAVED AN ANIMAL</button> 
+  </div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else 
+  {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

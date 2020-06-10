@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: courier;
+  font-size: 14px;
+  background-image: url("contactback.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  background-color:rgb(255, 146, 112);
+  padding: 120px;
+  text-align: center;
+  background-image: url("LOSANGELESZOO_LOGO.png");
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color:rgb(255, 170, 144);
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 50px;
+}
+
+#navbar a:hover {
+    color:rgb(255, 170, 144);
+    text-decoration: rgb(255, 241, 118) line-through;
+}
+
+#navbar a.active {
+border: 4px solid rgb(255, 241, 118) ;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  color: rgb(0, 0, 0);
+}
+
+.box1{
+    background-color: white;
+    color: rgb(255, 241, 118);opacity:0.7;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 500px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border: 10px solid black;
+    border-radius: 5px;
+    width: 600px;
+    text-align: center;
+}
+
+.animaltext1 { 
+    color: rgb(0, 0, 0);
+}
+
+.buttonGV {
+    background-color: white; 
+    color: black; 
+    border: 10px solid black;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 470px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition-duration: 0.4s;
+    border-radius: 90px;
+    font-family: courier;
+  }
+  
+  .buttonGV:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .buttonSV {
+    background-color: white; 
+    color: black; 
+    border: 10px solid black;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 470px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition-duration: 0.4s;
+    border-radius: 90px;
+    font-family: courier;
+  }
+  
+  .buttonSV:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .buttonDV {
+    background-color: white; 
+    color: black; 
+    border: 10px solid black;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 470px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition-duration: 0.4s;
+    border-radius: 90px;
+    font-family: courier;
+  }
+  
+  .buttonDV:hover {
+    background-color: black;
+    color: white;
+  }
+
+.box2{
+    border: 10px solid rgb(86, 126, 255);
+    background-color: rgb(255, 241, 118);
+    border-radius: 5px;
+    margin-right: 600px;
+    margin-left: 600px;
+    margin-bottom: 5px;
+    margin-top: 100px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+.animal2 {
+  float: left;
+  width: 30%;
+  padding-top: 15px;
+}
+
+.animaltext2 {
+    padding-left: 200px;
+}
+
+.box3{
+    border: 10px solid rgb(86, 126, 255);
+    background-color: rgb(255, 241, 118);
+    border-radius: 5px;
+    margin-right: 600px;
+    margin-left: 600px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+.animal3 {
+  float: left;
+  width: 30%;
+  padding-top: 1px;
+}
+
+.animaltext3 {
+    padding-left: 200px;
+}
+
+.box4{
+    border: 10px solid rgb(86, 126, 255);
+    background-color: rgb(255, 241, 118);
+    border-radius: 5px;
+    margin-right: 600px;
+    margin-left: 600px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+.animal4 {
+  float: left;
+  width: 30%;
+  padding-top: 20px;
+}
+
+.animaltext4 {
+    padding-left: 200px;
+}
+
+.box5{
+    border: 10px solid rgb(86, 126, 255);
+    background-color: rgb(255, 241, 118);
+    border-radius: 5px;
+    margin-right: 600px;
+    margin-left: 600px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+.animal5 {
+  float: left;
+  width: 30%;
+  padding-top: 8px;
+}
+
+.animaltext5 {
+    padding-left: 200px;
+}
+
+.box6{
+    border: 10px solid rgb(86, 126, 255);
+    background-color: rgb(255, 241, 118);
+    border-radius: 5px;
+    margin-right: 600px;
+    margin-left: 600px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+.animal6 {
+  float: left;
+  width: 30%;
+  padding-top: 50px;
+}
+
+.animaltext6 {
+    padding-left: 200px;
+}
+
+.box7{
+    border: 10px solid rgb(86, 126, 255);
+    background-color: rgb(255, 241, 118);
+    border-radius: 5px;
+    margin-right: 600px;
+    margin-left: 600px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+.animal7 {
+  float: left;
+  width: 30%;
+  padding-top: 70px;
+}
+
+.animaltext7 {
+    padding-left: 200px;
+}
+
+.box8{
+    border: 10px solid rgb(86, 126, 255);
+    background-color: rgb(255, 241, 118);
+    border-radius: 5px;
+    margin-right: 600px;
+    margin-left: 600px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+.animal8 {
+  float: left;
+  width: 30%;
+  padding-top: 20px;
+}
+
+.animaltext8 {
+    padding-left: 200px;
+}
+
+.box9{
+    border: 10px solid rgb(86, 126, 255);
+    background-color: rgb(255, 241, 118);
+    border-radius: 5px;
+    margin-right: 600px;
+    margin-left: 600px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+.animal9 {
+  float: left;
+  width: 30%;
+  padding-top: 20px;
+}
+
+.animaltext9 {
+    padding-left: 200px;
+}
+
+.box10{
+    border: 10px solid rgb(86, 126, 255);
+    background-color: rgb(255, 241, 118);
+    border-radius: 5px;
+    margin-right: 600px;
+    margin-left: 600px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+.animal10 {
+  float: left;
+  width: 30%;
+  padding-top: 40px;
+}
+
+.animaltext10 {
+    padding-left: 200px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+</div>
+
+<div id="navbar">
+    <a href="lazoo.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="animal+plants.html">Animal + Plants</a>
+    <a href="events.html">Events</a>
+    <a href="donate.html">Donate</a>
+    <a href="volunteer.html">Volunteer</a>
+    <a class="active" href="contact.html">Contact</a>
+  </div>
+
+  <div class="title">
+  <h1>CONTACT</h1></div>
+    
+
+  <div class="box2">
+    <div class="animal2">
+      <h2>MAILING ADDRESS</h2>
+    </div>
+    <div class="animaltext2">
+      <p>Los Angeles Zoo</p>
+       <p> 5333 Zoo Drive</p>
+        <p>
+        Los Angeles, CA 90027</p>
+    </div>
+  </div>
+
+    <div class="box3">
+        <div class="animal3">
+            <h2>TELEPHONE NUMBERS</h2>
+        </div>
+        <div class="animaltext3">
+          <p>(323) 644-4200</p>
+          <p>(323) 644-6045 (TTY)</p>
+        </div>
+      </div>
+
+      <div class="box4">
+        <div class="animal4">
+            <h2>VISITOR INFORMATION</h2>
+        </div>
+        <div class="animaltext4">
+          <p>General information about visiting the Los Angeles Zoo can be found in our Visitor Guide or by calling (323) 644-4200.</p>
+        </div>
+      </div>
+
+      <div class="box5">
+        <div class="animal5">
+            <h2>LOST AND FOUND</h2>
+        </div>
+        <div class="animaltext5">
+          <p>For inquiries about lost and found items please call (323) 644-4200.</p>
+        </div>
+      </div>
+
+      <div class="box6">
+        <div class="animal6">
+            <h2>MEMBERSHIP INFORMATION</h2>
+        </div>
+        <div class="animaltext6">
+          <p>For information about zoo memberships, call the Greater Los Angeles Zoo Association Membership Department at (323) 644-9115 (Monday through Friday, 9 a.m.–5 p.m.) or visit the Membership Page.</p>
+        </div>
+      </div>
+
+      <div class="box7">
+        <div class="animal7">
+            <h2>PRESS CONTACTS</h2>
+        </div>
+        <div class="animaltext7">
+          <p>For Zoo press inquiries during business hours: Tel: (323) 644-4273
+            For all after hours, weekend, and holiday Zoo press inquiries: lazoo.press@lacity.org
+            </P>
+            <P>For GLAZA press inquiries: press@lazoo.org</p>
+        </div>
+      </div>
+
+      <div class="box8">
+        <div class="animal8">
+            <h2>MERCHANDISE</h2>
+        </div>
+        <div class="animaltext8">
+          <p>To contact our merchandise buyer, send email to denisedemont@kmssa.com</p>
+        </div>
+      </div>
+
+      <div class="box9">
+        <div class="animal9">
+            <h2>EMPLOYMENT OPPORTUNITIES</h2>
+        </div>
+        <div class="animaltext9">
+          <p>Find out general information about employment opportunities on our Jobs Page.</p>
+        </div>
+      </div>
+
+      <div class="box10">
+        <div class="animal10">
+            <h2>SCHOOL GROUP TICKETS + RESERVATIONS</h2>
+        </div>
+        <div class="animaltext10">
+          <p>For information about school tours, field trips, and educational programs, visit our Community Programs Page or call (323) 644-4211, 8:30 a.m. to 4 p.m., Monday through Friday to speak directly to a reservations coordinator.</p>
+        </div>
+      </div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

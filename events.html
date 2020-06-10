@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: courier;
+  font-size: 14px;
+  background-color: rgb(90, 58, 105);
+  color: rgb(0, 0, 0);
+}
+
+.header {
+  background-color:rgb(255, 241, 118) ;
+  padding: 120px;
+  text-align: center;
+  background-image: url("LOSANGELESZOO_LOGO.png");
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color:rgb(125, 68, 151);
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 50px;
+}
+
+#navbar a:hover {
+    color:rgb(125, 68, 151);
+    text-decoration: rgb(255, 241, 118) line-through;
+}
+
+#navbar a.active {
+border: 4px solid rgb(255, 241, 118) ;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+/****************** CALENDAR ******************/
+
+.month {
+  padding: 20px ;
+  width: 32%;
+  text-align: center;
+  margin-left: 570px;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+padding-bottom: 20px;
+  padding-top: 20px;
+  margin-left: 600px;
+  margin-right: 600px;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 12%;
+  color: rgb(255, 241, 118);
+  text-align: center;
+  font-size: 20px;
+}
+
+.days {
+padding-bottom: 20px;
+  padding-top: 20px;
+  margin-left: 600px;
+  margin-right: 600px;
+  margin-bottom: 200px;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 12%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 15px;
+  color:rgb(255, 241, 118);
+}
+
+.days li .active {
+  padding: 5px;
+  background: rgb(255, 241, 118);
+  color: rgb(53, 35, 61);
+  border-radius: 5px;
+}
+
+.days li:hover {
+    background-color: rgb(255, 241, 118);
+    color: BLACK;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+/**************** END ****************/
+
+/* Style the tab */
+.tab {
+  float: left;
+  background-color:rgb(86, 126, 255);
+  width: 30%;
+  height: 300px;
+  margin-left: 300px;
+  margin-bottom: 200px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgb(184, 17, 226);
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: rgb(255, 241, 118);
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 30%;
+  border-left: none;
+  height: 300px;
+  display: none;
+  background-color: rgb(255, 241, 118);
+}
+
+/* Clear floats after the tab */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+</style>
+</head>
+<body>
+
+  <div class="header">
+  </div>
+  
+  <div id="navbar">
+    <a href="lazoo.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="animal+plants.html">Animal + Plants</a>
+    <a class="active" href="events.html">Events</a>
+    <a href="donate.html">Donate</a>
+    <a href="volunteer.html">Volunteer</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  
+  
+  <div class="title">
+    <h1>WHAT'S HAPPENING AT THE LA ZOO?</h1></div>
+  
+  <div class="month">      
+        2020<br>
+        <span style="font-size:30px">AUGUST</span>
+      </li>
+    </ul>
+  </div>
+
+<article class = "A1">
+  <ul class="weekdays">
+    <li>MO</li>
+    <li>TU</li>
+    <li>WE</li>
+    <li>TH</li>
+    <li>FR</li>
+    <li>SA</li>
+    <li>SU</li>
+  </ul>
+  
+  <ul class="days">  
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li><span class="active">10</span></li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li><span class="active">15</span></li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li><span class="active">19</span></li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li><span class="active">25</span></li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li><span class="active">30</span></li>
+    <li>31</li>
+  </ul>
+  </article>
+  
+  <div class="title">
+    <h2>EVENTS THIS MONTH</h2>
+  </div>
+
+<div class="tab"; >
+  <button class="tablinks" onmouseover="openCity(event, 'BEASTBALL')">VIRTUAL BEASTLY BALL</button>
+  <button class="tablinks" onmouseover="openCity(event, 'HIPPO')">HIPPO HELP</button>
+  <button class="tablinks" onmouseover="openCity(event, 'GIRAFFEE')">GIRAFFE'S GAME</button>
+  <button class="tablinks" onmouseover="openCity(event, 'PENGUIN')">PLAYTIME PENGUINS</button>
+</div>
+
+<div id="BEASTBALL" class="tabcontent">
+  <h3>VIRTUAL BEASTLY BALL</h3>
+  <p>Now more than ever before, we are faced with the reality of increasing threats against wildlife around the globe. Survival depends on fierce champions like the L.A. Zoo, leading in conservation efforts and saving species from extinction, while educating and connecting people with nature. Your support of the Beastly Ball – which coincides with Endangered Species Day – is key to ensuring the success of the Zoo’s mission.</p>
+    <p>
+    The virtual program pre-show will stream starting at 5:45 p.m. (PDT), with the main event beginning at 6:00 p.m. (PDT) on Friday, May 15, 2020. The expected duration will be approximately 45 minutes and the whole experience will be livestreamed right here!</p>
+</div>
+
+<div id="HIPPO" class="tabcontent" >
+  <h3>HIPPO HELP</h3>
+  <p>What's in a name? Watch a hippo, on land or in the water, and you’ll soon discover that this roly-poly is one of the animal world’s great characters. It is the most rotund land mammal and spends its daytime hours in lakes, pools, mudholes, or in the preferred moving waters of rivers. </p>
+      <h3>COME MEET PUDDLES!</h3>
+      <p>Puddles was the San Diego Zoo’s first hippopotamus; born on July 8, 1935 at the Brookfield Zoo outside of Chicago. He arrived here in August 1936, becoming the first hippo to be exhibited by a zoo on the West Coast. He became quite the viewing sensation.</p>
+</div>
+
+<div id="GIRAFFEE" class="tabcontent">
+  <h3>GIRAFFE'S GAME</h3>
+  <p>Why do so many people look up to giraffes—besides the obvious reason? The long and short of it is that they are a wonderful example of nature’s creativity. 
+    Giraffes are the tallest land animals. A giraffe could look into a second-story window without even having to stand on its tiptoes! A giraffe's 6-foot (1.8-meter) neck weighs about 600 pounds (272 kilograms). The legs of a giraffe are also 6 feet (1.8 meters) long. The back legs look shorter than the front legs, but they are about the same length. A giraffe's heart is 2 feet (0.6 meters) long and weighs about 25 pounds (11 kilograms), and its lungs can hold 12 gallons (55 liters) of air! </p>
+</div>
+
+<div id="PENGUIN" class="tabcontent">
+  <h3>PLAYTIME PENGUINS</h3>
+  <p>You're watching African penguins at the big, new Dan & Vi McKinney Penguin Habitat in Conrad Prebys Africa Rocks. You might also spot some of their pool mates, leopard sharks. But don't worry, the two species get along swimmingly!
+    <p>
+    Our flock of African penguins  can be seen in the big, new Cape Fynbos habitat at the San Diego Zoo’s Conrad Prebys Africa Rocks. The spacious Penguin Beach features a cobblestone beach, nesting areas, and rockwork that mimics the granite boulders found at Boulders Beach in South Africa—along with a 200,000-gallon pool with depths up to 13 feet, and underwater viewing. </p>
+</div>
+
+<div class="clearfix"></div>
+
+<script>
+  window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
